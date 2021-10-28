@@ -1,6 +1,10 @@
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class SingleLinkedList<E> implements Dsa<E> {
 
@@ -117,25 +121,21 @@ public class SingleLinkedList<E> implements Dsa<E> {
     }
 
     @Override
-    public boolean removeByIndex(int index) {
-        
-        Struct<E> aux = this._list;
-        int i = 0;
-        while (aux != null) {
-            if(i == index){
-
-                if (aux.next == null){
-                    aux = null; 
-                    return true;
-                }else{
-                    aux.element = aux.next.element;
-                    aux.next = aux.next.next;
-                return true;}
-            }
-            aux = aux.next; i++;
+    public boolean removeByIndex(int index) { 
+        Struct<E> aux = this._list; int i = 0;
+        boolean test = false;
+        while (aux != null && i <= index ) {
+            if (aux.next == null  && i == index) {
+                aux = null;
+                test = true;
+            }else if(index == i){
+                aux.element = aux.next.element;
+                aux.next = aux.next.next;
+                test = true;
+            }else if(aux!=null)
+         aux = aux.next;   
         }
-       
-        return false;
+        return test;
     }
 
     @Override
@@ -205,6 +205,18 @@ public class SingleLinkedList<E> implements Dsa<E> {
             }
             return result = Arrays.copyOf(result, i);
         }
+    }
+
+    @Override
+    public List<E> toList() {
+
+        List<E> temp = new ArrayList<>();
+        return null;
+    }
+
+    @Override
+    public Dsa<E> toStream() {
+        return null;
     }
 
 }

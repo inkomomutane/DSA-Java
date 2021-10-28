@@ -7,8 +7,10 @@
  * 
  */
 
-
+import java.util.*;
 public abstract interface Dsa<E> {
+
+     
 
     /**
      * Add element to collection
@@ -104,6 +106,10 @@ public abstract interface Dsa<E> {
      public abstract boolean containsAll(E[] elements);
 
      public abstract E[] where(java.util.function.Predicate<E> element);
+
+     public abstract List<E> toList();
+
+     public abstract Dsa<? extends E> toStream();
 
 
 }
