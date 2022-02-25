@@ -20,6 +20,10 @@ This project aims to learn, your contribution is welcome, whether it is correcti
 
 - sortArrayAsc(int... array);
 - sortArrayAsc(String... array);
+- avarageValue(int ...array);
+- contains(int value, int... array);
+- indexOf(int value, int ...array);
+- removeValueAtIndex(int index,int ... array);
 
 ## Lincense
 
