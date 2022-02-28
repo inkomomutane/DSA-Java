@@ -77,4 +77,29 @@ public class ArrayProblems {
         }   
         return true;
     }
+
+    public boolean isSubArray(int[] subArray,int ...array) {
+        if(subArray.length < 1) return true;
+        int counter  = 0;
+        for (int i : subArray) {
+            if(contains(i, array)) counter++;
+        }
+        return  counter == subArray.length;
+    }
+
+    public int sumUniqueNumbers(int ...array) {
+        int sum = 0;
+        for (int i : array) {
+            sum += isUniqueOnArray(i, array) ? i : 0; 
+        }
+        return sum;
+    }
+    public boolean isUniqueOnArray(int value,int ...array) {
+        if(array.length < 1) return false;
+        int counter = 0;
+        for (int i : array) {
+            if(i==value) counter++;
+        }
+        return counter == 1;
+    }
 }

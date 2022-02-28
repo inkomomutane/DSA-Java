@@ -24,6 +24,9 @@ This project aims to learn, your contribution is welcome, whether it is correcti
 - contains(int value, int... array);
 - indexOf(int value, int ...array);
 - removeValueAtIndex(int index,int ... array);
+- isSubArray(int[] subArray,int ...array);
+- sumUniqueNumbers(int ...array);
+- isUniqueOnArray(int value,int ...array);
 
 ## Lincense
 

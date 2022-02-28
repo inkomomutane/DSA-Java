@@ -9,7 +9,7 @@ import Recursive.Recursive;
 
 public class Main {
     public static void main(String[] args) {
-        // ArrayProblems arrayProblems = new ArrayProblems();
+        ArrayProblems arrayProblems = new ArrayProblems();
         // Recursive recusive = new Recursive();
         // System.out.println(recusive.factorial(41));
         // System.out.println(recusive.fibonacci(42));
@@ -19,8 +19,12 @@ public class Main {
         // System.out.println(recusive.gratherComunDivisor(4,45));
         // System.out.println(recusive.power(5,11));
         // System.out.println(recusive.reverseString("reversableString"));
-        // int[] test = { 20, 30, 25, 35, -16, 60, -100 };
-        // test = arrayProblems.sortArrayAsc(test);
+         int[] array = { 20, 30, 25, 35, -16, 60, -100 };
+         int[] subArray = {10,20,10,24};
+         System.out.println(arrayProblems.sumUniqueNumbers(subArray));
+         //System.out.println(arrayProblems.isSubArray(subArray, array));
+
+         // test = arrayProblems.sortArrayAsc(test);
         // for (int i : test) {
         // System.out.print(i+ ",");
         // }
