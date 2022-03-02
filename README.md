@@ -28,6 +28,16 @@ This project aims to learn, your contribution is welcome, whether it is correcti
 - sumUniqueNumbers(int ...array);
 - isUniqueOnArray(int value,int ...array);
 
+### Linked Lists
+
+#### SingleLinkedList
+
+- insert(int element);
+- getFirt();
+- getLast();
+- lenght();
+- toString();
+
 ## Lincense
 
 MIT
