@@ -1,26 +1,26 @@
-# Data Structures and algoritms in Java
+# Data Structures and algorithms in Java
 
 This is a repository that contains java algorithms and data structures.
 This project aims to learn, your contribution is welcome, whether it is correction of some poorly written code or something related.
 
-## Avaliable topics and functions
+## Available topics and functions
 
 ### Recursions
 
 - recursivePrintNumbers(int number);
 - factorial(int number);
 - fibonacci(int number);
-- sumOfdigit(int number);
+- sumOfDigit(int number);
 - power(int number, int power);
-- gratherComunDivisor(int aNumber, int bNumber);
+- greaterCommuneDivisor(int aNumber, int bNumber);
 - intToBinary(int number);
-- reverseString(String reversableString);
+- reverseString(String reversibleString);
 
 ### Arrays
 
 - sortArrayAsc(int... array);
 - sortArrayAsc(String... array);
-- avarageValue(int ...array);
+- averageValue(int ...array);
 - contains(int value, int... array);
 - indexOf(int value, int ...array);
 - removeValueAtIndex(int index,int ... array);
@@ -32,13 +32,15 @@ This project aims to learn, your contribution is welcome, whether it is correcti
 
 #### SingleLinkedList
 
-- insert(int element);
-- getFirt();
-- getLast();
-- lenght();
-- toString();
+- insert(int element); Time complexity =  [Best case - O(1) Worst case O(n)]
+- getFirst(); Time complexity =  [Best case - O(1) Worst-case O(1)]
+- getLast(); Time complexity =  [Best case - O(1) Worst case O(1)]
+- length(); Time complexity =  [Best case - O(1) Worst case O(1)]
+- toString(); Time complexity =  [Best case - O(1) Worst case O(n)]
+- insertHead(int element); Time complexity =  [Best case - O(1) Worst case O(1)]
+- insertAt(int index,int element);  Time complexity =  [Best case - O(1) Worst case O(n)]
 
-## Lincense
+## License
 
 MIT
 

@@ -26,22 +26,22 @@ public class Recursive {
         return (fibonacci(number - 1) + fibonacci(number - 2));
     }
 
-    public int sumOfdigit(int number) {
+    public int sumOfDigit(int number) {
         if (number <= 0)
             return number;
-        return (number % 10) + sumOfdigit((number - (number % 10)) / 10);
+        return (number % 10) + sumOfDigit((number - (number % 10)) / 10);
     }
 
     public int power(int number, int power) {
         return (power < 1) ? 1 : number * power(number, --power);
     }
 
-    public int gratherComunDivisor(int aNumber, int bNumber) {
+    public int greaterCommuneDivisor(int aNumber, int bNumber) {
         if (aNumber < 0 || bNumber < 0)
             return -1;
         if (bNumber == 0)
             return aNumber;
-        return gratherComunDivisor(bNumber, aNumber % bNumber);
+        return greaterCommuneDivisor(bNumber, aNumber % bNumber);
     }
 
     public String intToBinary(int number) {
@@ -50,9 +50,9 @@ public class Recursive {
         return (intToBinary(number / 2)) + "" + (number % 2);
     }
 
-    public String reverseString(String reversableString) {
-        if(reversableString.length() < 1) return reversableString;
+    public String reverseString(String reversibleString) {
+        if(reversibleString.length() < 1) return reversibleString;
         else
-        return reverseString(reversableString.substring(1)) + reversableString.charAt(0);
+        return reverseString(reversibleString.substring(1)) + reversibleString.charAt(0);
     }
 }

@@ -38,7 +38,7 @@ public class ArrayProblems {
         return array;
     }
 
-    public double avarageValue(int... array) {
+    public double averageValue(int... array) {
         if (array.length < 1)
             return array.length;
         int sum = 0;
