@@ -21,6 +21,9 @@ public class Main {
         lists.insertHead(15);
         lists.insertHead(55);
         lists.insertAt(6, 150);
+        lists.insertAt(7, 1501);
+        // lists.deleteAt(6);
+        // lists.deleteAt(5);
         //lists.insertAt(7, 155);
 
 
@@ -37,13 +40,10 @@ public class Main {
         // lists.insert(9);
 
         System.out.println(lists.toString());
-        //System.out.println(lists.length());
-        //     lists.delete(9);
-           
+        System.out.println(lists.length());
+        // lists.delete(9);
         // System.out.println(lists.toString());
         // System.out.println(lists.length());
-
-
         // System.out.println(lists.length());
         // System.out.println(lists.getFirst());
         // System.out.println(lists.getLast());

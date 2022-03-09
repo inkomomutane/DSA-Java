@@ -35,21 +35,15 @@ public class Single {
     }
 
     public void insertAt(int index,int element) {
-        if (index > this.length)  {System.err.println("Length is less than index.");  return; }
-        if (index == 0) this.insertHead(element);
-
-        int i = 0;
-        for (Node aux = this.root; i < index - 1; aux =aux.next,i++) {
-            if(aux == null){
-                aux = new Node(element);this.length++;
-            }else
-            if(i == index - 1){
-                Node newNode  = new Node(element);
-                newNode.next = aux.next;
-                aux.next = newNode;
-                this.length++;
-            }
-        }
+        if (index > this.length || index < 0)  {System.err.println("Length is less than index or index is invalid.");  return; }
+        if (index == 0) {this.insertHead(element); return;}
+        if (index == this.length()) {insert(element); return;} 
+        Node aux = this.root;
+        for (int i = 0; i < index - 1; aux = aux.next,i++) ;
+        Node newNode  = new Node(element);
+        newNode.next = aux.next;
+        aux.next = newNode;
+        this.length++;
     }
 
     private Node insertElement(Node root, int element) {
@@ -93,7 +87,7 @@ public class Single {
 
     public int delete(int element){
         Node aux = this.root; if (this.root ==null) return 1;
-       Node prev = aux;
+        Node prev = aux;
         while (aux != null) {
             if(aux.element == element) {
                 if (aux.next == null) {
@@ -114,6 +108,16 @@ public class Single {
         return 1;
     }
 
-
+    public void deleteAt(int index) {
+        if(index < 0 || index > this.length ){System.out.println("Index not found."); return;}
+        if (index == 0) {this.root = this.root.next;}
+        Node aux = this.root;
+        for (int i = 1; i  < index - 1 ; i++) {
+            aux=aux.next;
+        }
+        
+        aux.next = 
+        aux.next.next;
+    }
 
 }
