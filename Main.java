@@ -1,7 +1,6 @@
 
-// import Arrays.ArrayProblems;
-import LikedLists.Single;
-// import Recursive.Recursive;
+
+import LikedLists.*;
 
 /**
  * @author Nelson Alexandre Mutane
@@ -11,43 +10,24 @@ import LikedLists.Single;
 public class Main {
     public static void main(String[] args) {
 
-        Single lists = new Single();
-
-
-        lists.insert(1);
-        lists.insert(2);
-        lists.insertHead(0);
-        lists.insertHead(5);
-        lists.insertHead(15);
-        lists.insertHead(55);
-        lists.insertAt(6, 150);
-        lists.insertAt(7, 1501);
-        // lists.deleteAt(6);
-        // lists.deleteAt(5);
-        //lists.insertAt(7, 155);
-
-
-        //lists.delete(150);
-
-
-        // lists.insert(3);
-
-        // lists.insert(4);
-        // lists.insert(5);
-        // lists.insert(6);
-        // lists.insert(7);
-        // lists.insert(8);
-        // lists.insert(9);
-
+        DoubleLinkedList lists = new DoubleLinkedList();
+        lists.insertEnd(15);
+        lists.insertEnd(154);
+        lists.insertEnd(155);
+        lists.insertAt(3,1545);
         System.out.println(lists.toString());
-        System.out.println(lists.length());
-        // lists.delete(9);
-        // System.out.println(lists.toString());
-        // System.out.println(lists.length());
-        // System.out.println(lists.length());
-        // System.out.println(lists.getFirst());
-        // System.out.println(lists.getLast());
-        // System.out.println(lists.getClass());
-        
+        System.out.println(lists.getLenght());
+        lists.deleteAt(0);
+        lists.deleteAt(0);
+        lists.deleteAt(0);
+        lists.deleteAt(0);
+        lists.insertEnd(155);
+        lists.insertEnd(155);
+        lists.insertEnd(155);
+        lists.insertEnd(155);
+
+        lists.updateAt(4, 4);
+        System.out.println(lists.getLenght());
+        System.out.println(lists.toString());
     }
 }

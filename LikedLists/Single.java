@@ -1,3 +1,8 @@
+
+/**
+ * @author Nelson Alexandre Mutane
+ * 
+ */
 package LikedLists;
 
 public class Single {
@@ -14,12 +19,17 @@ public class Single {
     /**
      * InnerSingle
      */
-    protected class Node {
+    public class Node {
         int element;
         Node next = null;
 
         Node(int element) {
             this.element = element;
+        }
+
+        @Override
+        public String toString() {
+            return "" + this.element;
         }
     }
 

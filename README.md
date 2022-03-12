@@ -39,6 +39,18 @@ This project aims to learn, your contribution is welcome, whether it is correcti
 - toString(); Time complexity =  [Best case - O(1) Worst case O(n)]
 - insertHead(int element); Time complexity =  [Best case - O(1) Worst case O(1)]
 - insertAt(int index,int element);  Time complexity =  [Best case - O(1) Worst case O(n)]
+- toArray(); Time complexity =  [Best case - O(1) Worst case O(n)]
+
+#### DoubleLinkedList
+
+- insertEnd(int element); Time complexity =  [Best case - O(1) Worst case O(n)]
+- getLength(); Time complexity =  [Best case - O(1) Worst case O(1)]
+- toString(); Time complexity =  [Best case - O(1) Worst case O(n)]
+- insertHead(int element); Time complexity =  [Best case - O(1) Worst case O(1)]
+- insertAt(int index,int element);  Time complexity =  [Best case - O(1) Worst case O(n)]
+- deleteAt(int index);  Time complexity =  [Best case - O(1) Worst case O(n)]
+- updateAt(int index);  Time complexity =  [Best case - O(1) Worst case O(n)]
+- toArray(); Time complexity =  [Best case - O(1) Worst case O(n)]
 
 ## License
 
